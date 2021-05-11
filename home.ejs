@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head')%>
+
+    <body class="d-flex flex-column vh-100">
+
+        <%- include('partials/navbar')%>
+
+            <div class="container mt-4">
+                <class class="row d-flex justify-content-center">
+                    <div class="col-md-9">
+                        <div class="d-flex justify-content-center px-5">
+                            <div class="search"> <input type="text" class="search-input" placeholder="Search products"
+                                    name="">
+                                <a href="#" class="search-icon"> <i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </class>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 py-5">
+                        <div class="card border border-secondary" style="width: 18rem;">
+                            <div class="card-header category">
+                                <h3>Products Category</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Beauty & Personal Care</li>
+                                <li class="list-group-item">Clothes</li>
+                                <li class="list-group-item">Food</li>
+                                <li class="list-group-item">Home Decor</li>
+                                <li class="list-group-item">Pet Supplies</li>
+                                <li class="list-group-item">Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-5 px-0">
+                        <div class="card border border-secondary" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcome back, Bob!</h5>
+                                <ion-icon name="person-circle"></ion-icon>
+                                <p class="card-text">Recently viewed</p>
+                                <img class="card-img-top" src="macbook.jpeg" alt="Product item">
+                                <p class="card-text">MacBook Pro - Space Gray 13-inch</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-5 px-0">
+                        <div class="card border border-secondary" style="width: 18rem;">
+                            <img class="card-img-top temp-review" src="ctci.jpg" alt="Product item">
+                            <div class="card-body">
+                                <h5 class="card-title">Rate your recent order</h5>
+                                <p class="card-text">Cracking the Coding Interview</p>
+                                <a href="#" class="btn btn-secondary review-button">Rate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+
+            <%- include('partials/footer') %>
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+                    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+                    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+                    crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
