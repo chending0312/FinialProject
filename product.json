@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6095e554e9f7200e4eaaf8af"
+  },
+  "price": "1.5",
+  "detail": "1lb",
+  "image": "./public/images/pro3.jpg",
+  "local": "food",
+  "title": "banana"
+},{
+  "_id": {
+    "$oid": "6095e5f7e9f7200e4eaaf8b0"
+  },
+  "price": "40",
+  "detail": "for python",
+  "image": "./public/images/pro1.jpg",
+  "local": "book",
+  "title": "python book"
+}]
