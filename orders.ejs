@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS157 final Project</title>
+
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap.css">
+
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="/homepage">
+            <img src="/images/Logo2.png" alt="" width="50" height="35" class="d-inline-block align-text-top">Shop Express<a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <div class="mr-5">
+                <ul class="navbar-nav mr-auto mr-0">
+
+                    <% if(currentUser) { %>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="/homepage">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><%= currentUser.name %></b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/logout">Logout</a>
+                    </li>
+                <% } %>
+                
+                
+            <!--  to show  -->
+</div>
+    
+<%- include('partials/footer') -%>

@@ -1,0 +1,29 @@
+<%- include('partials/header') -%>
+<h1 class="text-center mt-5 mb-3">Change Information</h1>
+<div class="container w-60">
+    <%- include('partials/messages') -%>
+   <form action="/changeinf" method="POST">
+
+        <% if(currentUser) { %>
+            <p>current address: <%= currentUser.address %></b></p>
+            <p>current phone: <%= currentUser.phone %></b></p>
+        <% } %>
+
+        
+        <div>address:
+            <input type="address" name="address" class="form-control" placeholder="address">
+        </div>
+
+        <div>phone:
+            <input type="phone" name="phone" class="form-control" placeholder="phone">
+        </div>
+
+        <button type="submit" class="btn btn-success  btn-block  btn">Save Information</button>
+    </form>
+    
+</div>
+
+</div>
+
+
+<%- include('partials/footer') -%>
