@@ -38,7 +38,7 @@ routers.post('/search',  (req, res)=> {
     //  Product.findOne({name: req.body.title})
     //     .then(product => {
     //         product.findOne({"title": req.body.title}, err =>{
-    //             res.redirect('/search');
+    //             res.redirect('/search'); 
     //     })
     // });
     // console.log(req.body.title)
